@@ -1,6 +1,26 @@
 # ********* Collected git aliases ****************
+#
+#*****!!! NOTE! There are duplicate alias names that are assigned to different actions
+#                     Beware!!!
+#
+# Note on usage...These aliases and scripts can be placed in your .zshrc or .bashrc files
+            or... you can echo them into .zshrc or .bashrc
+            echo ' alias or script to be added ' >> ~/.zshrc
+            or ~/.bashrc if you are using bash
 
-# git aliases
+# ***************Scripts *******************
+
+# script creates README.md with repo name or project name 
+#            and a .gitignore file .DS_Store
+#
+# usage- reig git_repo_name 
+reig () {
+  echo "# $1" >> README.md  
+  echo ".DS_Store" >> .gitignore
+}
+
+# ****************Git aliases*******************
+
 alias gc='git checkout'
 alias gcm='git commit -m'
 alias gs='git status'
@@ -23,7 +43,7 @@ alias gl='git log -3'
 # cleans all branches locally that have already been merged.
 alias gcmb="git branch --merged | grep -Ev '(^\*|develop)' | xargs git branch -d"
 
-
+# *********** More aliases Beware of duplicate aliases! ***********
 alias gb='git branch'
 alias gs='git status'
 alias ga='git add'
@@ -46,6 +66,8 @@ alias grgu='git remote get-url'
 
 alias gbb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias gbbb="git for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
+
+# *************More aliases  Beware of duplcate aliases!*******************
 
 alias gc="git clone"
 alias gp="git push"
