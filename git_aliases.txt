@@ -4,7 +4,7 @@
 #                     Beware!!!
 #
 # Note on usage...These aliases and scripts can be placed in your .zshrc or .bashrc files
-            or... you can echo them into .zshrc or .bashrc
+            or... you can echo them into .zshrc or .bashrc via your terminal
             echo ' alias or script to be added ' >> ~/.zshrc
             or ~/.bashrc if you are using bash
 
