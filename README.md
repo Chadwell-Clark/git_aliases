@@ -1,4 +1,4 @@
 # git_aliases
 
 Collection of git aliases from various sailors on the bit ocean.
-Danger there may be monsters lurking in the depths
+Danger! Monsters there may be...  lurking in the depths.
